@@ -1,0 +1,110 @@
+/* --------------- Réglages de base ----------------- */
+
+@font-face {
+    font-family: "Poppins-Regular" ;
+    src: url(./Poppins-Regular.ttf);
+}
+
+*{
+    list-style: ;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins-Regular";
+}
+
+body{
+    width: 100vw;   
+}
+
+/* ------------ Entête --------------*/
+
+.et{
+    width: 100vw;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.812);
+    display: flex;
+    align-items: center;
+}
+    .bloc_et{
+        display: flex;
+        width: 100vw;
+        height: 40vh;
+        justify-content: space-around;
+        align-items: center;
+        height: 30vh;
+    }
+        .photo img{
+            border-radius: 25px;
+            
+            margin-right: 190px;
+        }
+        .titre h1{
+            width: 40vw;
+            color: white;
+            font-size: 3.5em;
+            text-transform: uppercase;
+        }
+        .titre p{
+            color: white;
+            font-size: 1.5em;
+            margin-left: 40px;
+        }
+
+/* ------------- Corp du CV ----------------*/
+
+.corp_cv{
+    width: 100%;
+    height: 1300px;
+    display: flex;
+}
+    .bloc_gauche{
+        width: 40%;
+        height: 1300px;
+        background-color: rgba(0, 0, 0, 0.853);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1em;
+        color: white;
+    }
+        .contact_et_form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    .bloc_droite{
+        width: 100%;
+        height: 1300px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* ------- Responsive -------------*/
+
+@media (max-width: 1340px) {
+    .et{
+        height: 50%;
+    }
+    .et .bloc_et{
+        height: 50%;
+    }
+    .corp_cv{
+        flex-direction: column-reverse;
+        width: 100%; 
+        height: 2600px;       
+    }
+    .bloc_gauche{
+        width: 100%;
+    }
+    .bloc_droite{
+        height: 1600px;
+    }
+}       .contact_et_form{
+            width: 100%;
+}
